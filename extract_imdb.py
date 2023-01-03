@@ -50,7 +50,7 @@ class GestionDataset:
                         pass
         except:
             return self.download_file()
-        if set(liste_verif) == set(liste_file):
+        if set(liste_verif) == set(self.liste_file):
             return self.dict_file
         else:
             return self.download_file()
