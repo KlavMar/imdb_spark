@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% load static %} 
+
+{% block content %}
+{%load plotly_dash%}
+
+
+    {% plotly_app name="app_imdb" ratio=1 %}
+
+{% endblock %}
